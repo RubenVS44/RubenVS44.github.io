@@ -1,10 +1,86 @@
-h1{
-    color: rgb(255, 0, 0);
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fef6f0;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    font-size:24px;
+        }
+header {
+    background-color: #ff0800;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
 }
-h2{
-    color: blue;
-    text-align: right;
+header .logo img {
+    width: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.principal{
+   
+    text-align: center;
+    padding: 10px 5px;
+    font-family: 'Georgia', serif; 
+    font-weight: normal; 
+    color: #2c3e50; 
+    margin-top: 20px;
+}
+.principal h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.principal p{
     font-size: 16px;
+
+}
+
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    display: inline-block;
+    width: 250px;
+    background-color: #fff;
+}
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #ff0011;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #e76e7a;
+}
+
+footer {
+    background-color: #ff0800;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 40px;
 }

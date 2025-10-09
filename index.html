@@ -3,47 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tienda de regalos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="imagenes/logo.png" type="image/x-icon">
+    <style type="text/css"></style><style type="text/css" id="operaUserStyle"></style>
 </head>
 <body>
-    <!-- hola -->
-    <h1>Mi pagina web</h1>
-    <nav>
-        <ul>
-         <li><a href="segunda pagina.html" target="_blank">Seccion 1</a></li>
-         <li><a href="#brainrots">Ronaldo</a></li>
-         <li><a href="#Skibidi">Messi</a></li>
-        </ul>
-    </nav>
     <header>
-        <main>
-            <section>   
-                <h2 id="brainrots">Ronaldo</h2>
-                <article>
-                    <h3>Tralala</h3>
-                    <p><a href="https://es.wikipedia.org/wiki/Brainrot_italiano">HISTORIA</a> 
-                        Los tralarelitos dicen Tralala </p>
-                    <img src="imagene/ronal.avif" alt="El famoso tralalero"
-                    width="500" height="500">
-                    
-                </article>
-            </section>
-        </main>
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Tienda de regalos">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="#">Contactar</a></li>
+                <li><a href="#">Localidad</a></li>
     </header>
-    
-    <header>
-        <main>
-            <section>
-                    <h2 id="Skibidi">Messi</h2>
-                    <article>
-                        <h3>skibidi toitel</h3>
-                        <p>El mas letal de todos</p>
-                       <a href="https://www.youtube.com/watch?v=CyAlymPB2dU" target="_blank" title="Ir a youtube">  <img src="imagene/messi.jpg" alt="El peligro"
-                        width="500" height="500"></a>
-                        
-                    </article>
-            </section>
-        </main>
-    </header>
-</body>
-</html>
+    <div class="principal">
+        <h1>Regalos con cariño💖</h1>
+        
+    </div>
+
+    <div class="producto">
+        <img src="imagenes/flores.jpg" alt="Ramo de flores">
+        <h3>Ramo de Flores</h3>
+        <p>Un hermoso ramo para alegrar el dia.</p>
+        <button onclick="agregarCarrito('Ramo de Flores')">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="imagenes/bombones.jpg" alt="Caja de chocolates">
+        <h3>Caja de Chocolates</h3>
+        <p>Deliciosos chocolates artesanales.</p>
+        <button onclick="agregarCarrito('Caja de Chocolates')">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="imagenes/tarjeta.webp" alt="Tarjeta personalizada">
+        <h3>Tarjeta Personalizada</h3>
+        <p>Un mensaje especial para alguien especial.</p>
+        <button onclick="agregarCarrito('Tarjeta Personalizada')">Agregar al carrito</button>
+    </div>
+
+     <div class="producto">
+        <img src="imagenes/collar.jpg" alt="Collar">
+        <h3>Collar</h3>
+        <p>Para que te recuerden siempre</p>
+        <button onclick="agregarCarrito('Collar')">Agregar al carrito</button>
+    </div>
+
+    <script>
+        function agregarCarrito(producto) {
+            alert("Has agregado '" + producto + "' al carrito 🎁");
+        }
+    </script>
+   
+   <footer>
+        Tienda de regalos, tu tienda de confiaznza.
+        ©2025 Avenida de fondo delecha 2025
+    </footer>
+
+
+</body></html>
