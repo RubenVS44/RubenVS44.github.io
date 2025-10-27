@@ -17,7 +17,6 @@ header .logo img {
 }
 
 nav ul {
-    list-style: none;
     display: flex;
 }
 
