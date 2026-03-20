@@ -3,70 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descripcion" content="Tienda de regalos con flores bombones pulseras para tus amigos y familia">
-    <meta name="subject" content="Tienda de regalos">
-    <meta name="keywords" content="flores, bombones, pulseras, collares, llaveros, peluches">
-    <meta name="copyright" content="Tienda de regalos">
-    <meta name="lenguage" name="español">
-    <meta name=" author" content="Ruben Vazquez">
+    <meta name="description" content="Más opciones de regalo - Tienda de regalos">
+    <meta name="author" content="Ruben Vazquez">
     <meta name="robots" content="index,follow">
-    <title>Bombones</title>
-    <link rel="stylesheet" href="estilos.css">
     <link rel="icon" href="imagenes/logo.png" type="image/x-icon">
-    <link rel="canonico" href="https://rubenvs44.github.io/">
-    <style type="text/css"></style><style type="text/css" id="operaUserStyle"></style>
-    <link rel="stylesheet" href="XML/sitemap.xml">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Más opciones - Tu regalo</title>
+    <style>
+        nav.migas {
+            background-color: #fff3f3;
+            border-left: 4px solid #ff0800;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        nav.migas a {
+            color: #ff0800;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav.migas a:hover { text-decoration: underline; }
+        nav.migas span { margin: 0 6px; color: #aaa; }
+
+        main p {
+            font-size: 17px;
+            line-height: 1.9;
+            color: #444;
+            max-width: 720px;
+            margin: 0 auto 20px;
+            text-align: left;
+            padding: 0 20px;
+        }
+        main a.boton {
+            display: inline-block;
+            margin: 10px 8px 40px;
+            background-color: #ff0800;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 24px;
+            border-radius: 22px;
+            transition: background-color 0.2s ease;
+        }
+        main a.boton:hover {
+            background-color: #cc0600;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-    <div class="logo">
-            <img src="imagenes/logo.png" alt="Tienda de regalos">
-    </div>
+        <img src="imagenes/logo.png" alt="Tienda de regalos">
+        <button onclick="toggleMenu()" aria-label="Abrir menú">☰</button>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Carrito</a></li>
                 <li><a href="#">Contactar</a></li>
                 <li><a href="sitios.html">Otros sitios</a></li>
+            </ul>
         </nav>
-   </header>
-<a href="index.html">Inicio</a>><a href="silo.html">Tu regalo</a>><a href="BomboneSilo.html">Bombones</a>>Opciones
-<h1>Distintas opciones</h1>
-<p>Mas regalos para hacer</p>
-<p>¿Con ganas de bombones?
-    <a href="bombones.html"><img src="imagenes/bombones.jpg" alt=""></a>
-</p>
-<section>
-    
-</section>
-</body>
-<script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Inicio",
-              "item": "https://rubenvs44.github.io/"
-            }
-            {"@type": "ListItem",
-             "position": 2,
-             "name":Tu regalo,
-             "item":https://rubenvs44.github.io/silo.html
-            }
-             {"@type": "ListItem",
-             "position": 3,
-             "name":Bombones,
-             "item":https://rubenvs44.github.io/BomboneSilo.html
-            }
-             {"@type": "ListItem",
-             "position": 4,
-             "name":Opciones,
-             "item":https://rubenvs44.github.io/Opciones.html
-            }
-          ]
-        }
+    </header>
 
-      </script>
+    <!-- Migas de pan -->
+    <nav class="migas" aria-label="Ruta de navegación">
+        <a href="index.html">Inicio</a>
+        <span>›</span>
+        <a href="silo.html">Tu regalo</a>
+        <span>›</span>
+        <a href="BomboneSilo.html">Bombones</a>
+        <span>›</span>
+        <span>Más opciones</span>
+    </nav>
+
+    <section>
+        <h1>🎀 Distintas opciones de regalo</h1>
+        <p>¿Con ganas de explorar? Aquí tienes más ideas para encontrar el regalo perfecto.</p>
+    </section>
+
+    <main>
+
+        <p>
+            Si los bombones no son suficiente o quieres combinarlos con algo más, aquí tienes
+            otras categorías de regalos que seguro gustarán. Desde flores frescas hasta joyas o
+            peluches achuchables, tenemos algo para cada persona y cada momento.
+        </p>
+
+        <a href="bombones.html" class="boton">🍫 Bombones</a>
+        <a href="flores.html" class="boton">🌸 Flores</a>
+        <a href="collarespulseras.html" class="boton">💎 Joyas</a>
+        <a href="peluches.html" class="boton">🧸 Peluches</a>
+        <a href="tarjetas.html" class="boton">💌 Tarjetas</a>
+        <a href="llaveros.html" class="boton">🔑 Llaveros</a>
+
+    </main>
+
+    <footer>
+        <p>Tienda de regalos, tu tienda de confianza.</p>
+        <p>©2025 Avenida de Fondo Derecha 2025</p>
+        <a href="silo.html">Conoce tu regalo</a>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('header nav');
+            nav.classList.toggle('abierto');
+        }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://rubenvs44.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Tu regalo", "item": "https://rubenvs44.github.io/silo.html" },
+        { "@type": "ListItem", "position": 3, "name": "Bombones", "item": "https://rubenvs44.github.io/BomboneSilo.html" },
+        { "@type": "ListItem", "position": 4, "name": "Opciones", "item": "https://rubenvs44.github.io/Opciones.html" }
+      ]
+    }
+    </script>
+
+</body>
+</html> 

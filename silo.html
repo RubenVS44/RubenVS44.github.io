@@ -3,61 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descripcion" content="Tienda de regalos con flores bombones pulseras para tus amigos y familia">
-    <meta name="subject" content="Tienda de regalos">
-    <meta name="keywords" content="flores, bombones, pulseras, collares, llaveros, peluches">
-    <meta name="copyright" content="Tienda de regalos">
-    <meta name="lenguage" name="español">
-    <meta name=" author" content="Ruben Vazquez">
+    <meta name="description" content="Conoce el motivo de tu regalo - Tienda de regalos">
+    <meta name="author" content="Ruben Vazquez">
     <meta name="robots" content="index,follow">
-    <title>Tu regalo</title>
-    <link rel="stylesheet" href="estilos.css">
     <link rel="icon" href="imagenes/logo.png" type="image/x-icon">
-    <link rel="canonico" href="https://rubenvs44.github.io/">
-    <style type="text/css"></style><style type="text/css" id="operaUserStyle"></style>
-    <link rel="stylesheet" href="XML/sitemap.xml">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Tu regalo - Tienda de regalos</title>
+    <style>
+        nav.migas {
+            background-color: #fff3f3;
+            border-left: 4px solid #ff0800;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        nav.migas a {
+            color: #ff0800;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav.migas a:hover {
+            text-decoration: underline;
+        }
+        nav.migas span {
+            margin: 0 6px;
+            color: #aaa;
+        }
+        main p {
+            font-size: 17px;
+            line-height: 1.9;
+            color: #444;
+            max-width: 720px;
+            margin: 0 auto 30px;
+            text-align: left;
+            padding: 0 20px;
+        }
+        main nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        main nav a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #fff;
+            border: 2px solid #ffccc9;
+            border-radius: 14px;
+            padding: 24px 30px;
+            text-decoration: none;
+            color: #cc0600;
+            font-weight: bold;
+            font-size: 16px;
+            width: 160px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        }
+        main nav a span.icono {
+            font-size: 36px;
+        }
+        main nav a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(255, 8, 0, 0.15);
+            border-color: #ff0800;
+        }
+
+        @media (max-width: 480px) {
+            main nav a {
+                width: 130px;
+                padding: 18px 16px;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <header>
-    <div class="logo">
-            <img src="imagenes/logo.png" alt="Tienda de regalos">
-    </div>
+        <img src="imagenes/logo.png" alt="Tienda de regalos">
+        <button onclick="toggleMenu()" aria-label="Abrir menú">☰</button>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Carrito</a></li>
                 <li><a href="#">Contactar</a></li>
                 <li><a href="sitios.html">Otros sitios</a></li>
+            </ul>
         </nav>
-   </header>
-<a href="index.html">Inicio</a>><a href="">Tu regalo</a>
-<h1>Conoce el motivo de tu regalo</h1>
-<p>Los regalos se hacen fundamentalmente para fortalecer vínculos afectivos, expresar gratitud, amor o aprecio, y fomentar la cohesión social. 
-    Actúan como herramientas de comunicación emocional que generan bienestar tanto en quien da como en quien recibe, 
-    liberando sustancias cerebrales como la oxitocina y dopamina. Además, es un comportamiento humano arraigado en la tradición y la cultura
-    para celebrar,crear comunidad o incluso buscar perdón</p>
-   <section>
-    <a href="BomboneSilo.html">Bombones</a>
-   </section>
+    </header>
+
+    <nav class="migas" aria-label="Ruta de navegación">
+        <a href="index.html">Inicio</a>
+        <span>›</span>
+        <span>Tu regalo</span>
+    </nav>
+
+    <section>
+        <h1>🎁 Conoce el motivo de tu regalo</h1>
+        <p>¿Por qué regalamos? Descubre el significado detrás de cada detalle.</p>
+    </section>
+
+    <main>
+
+        <p>
+            Los regalos se hacen fundamentalmente para fortalecer vínculos afectivos, expresar gratitud, amor o aprecio,
+            y fomentar la cohesión social. Actúan como herramientas de comunicación emocional que generan bienestar tanto
+            en quien da como en quien recibe, liberando sustancias cerebrales como la oxitocina y la dopamina.
+            Además, es un comportamiento humano arraigado en la tradición y la cultura: para celebrar, crear comunidad
+            o incluso buscar perdón.
+        </p>
+
+        <p>
+            Explorar el mundo de los regalos es también explorar el mundo de las emociones. Cada categoría cuenta
+            una historia diferente. ¿Quieres saber más sobre alguna en concreto?
+        </p>
+
+  
+        <nav aria-label="Categorías de regalos">
+            <a href="BomboneSilo.html">
+                <span class="icono">🍫</span>
+                Bombones
+            </a>
+            <a href="flores.html">
+                <span class="icono">🌸</span>
+                Flores
+            </a>
+            <a href="collarespulseras.html">
+                <span class="icono">💎</span>
+                Joyas
+            </a>
+            <a href="peluches.html">
+                <span class="icono">🧸</span>
+                Peluches
+            </a>
+            <a href="tarjetas.html">
+                <span class="icono">💌</span>
+                Tarjetas
+            </a>
+            <a href="llaveros.html">
+                <span class="icono">🔑</span>
+                Llaveros
+            </a>
+        </nav>
+
+    </main>
+
+    <footer>
+        <p>Tienda de regalos, tu tienda de confianza.</p>
+        <p>©2025 Avenida de Fondo Derecha 2025</p>
+        <a href="index.html">Volver al inicio</a>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('header nav');
+            nav.classList.toggle('abierto');
+        }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://rubenvs44.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Tu regalo", "item": "https://rubenvs44.github.io/silo.html" }
+      ]
+    }
+    </script>
 
 </body>
-<script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Inicio",
-              "item": "https://rubenvs44.github.io/"
-            }
-            {"@type": "ListItem",
-             "position": 2,
-             "name":Tu regalo,
-             "item":https://rubenvs44.github.io/silo.html
-            }
-          ]
-        }
-
-      </script>
+</html>

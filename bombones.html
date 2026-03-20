@@ -3,74 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de bombones y chocolates - Tienda de regalos">
+    <meta name="author" content="Ruben Vazquez">
+    <meta name="robots" content="index,follow">
     <link rel="icon" href="imagenes/logo.png" type="image/x-icon">
-    <title>Bombones-Tienda de regalos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Bombones - Tienda de regalos</title>
 </head>
 <body>
+
     <header>
-        <div class="logo">
-            <img src="imagenes/logo.png" alt="Tienda de regalos">
-        </div>
+        <img src="imagenes/logo.png" alt="Tienda de regalos">
+        <button onclick="toggleMenu()" aria-label="Abrir menú">☰</button>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="menu tienda.html">Menú</a></li>
                 <li><a href="#">Carrito</a></li>
                 <li><a href="#">Contactar</a></li>
-                <li><a href="#">Localidad</a></li>
+                <li><a href="sitios.html">Otros sitios</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <style>
-        
-        body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #fef6f0;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+
+    <section>
+        <h1>🍫 Catálogo de Bombones</h1>
+        <p>Dulces momentos para compartir. Selección artesanal de chocolates y bombones para todos los gustos.</p>
+    </section>
+
+    <main>
+
+        <article>
+            <a href="#">
+                <img src="imagenes/bombones.jpg" alt="Caja de bombones surtidos">
+            </a>
+            <h3>Caja de Bombones Surtidos</h3>
+            <p>Una selección variada de bombones artesanales: praliné, trufa, caramelo y más. Presentación elegante para regalar.</p>
+            <p>5.99€</p>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="imagenes/chocolate_negro.png" alt="Tableta de chocolate negro">
+            </a>
+            <h3>Tableta Chocolate Negro 70%</h3>
+            <p>Chocolate negro intenso con 70% de cacao. Ideal para los amantes del sabor puro y profundo.</p>
+            <p>3.49€</p>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="imagenes/trufas.jpg" alt="Trufas de chocolate">
+            </a>
+            <h3>Caja de Trufas</h3>
+            <p>Trufas de chocolate con cobertura de cacao en polvo, elaboradas de forma artesanal. Un clásico irresistible.</p>
+            <p>7.99€</p>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="imagenes/caja_corazon.webp" alt="Bombones en forma de corazón">
+            </a>
+            <h3>Bombones Corazón</h3>
+            <p>Bombones de chocolate con leche presentados en caja de corazón. Perfectos para San Valentín o cualquier día especial.</p>
+            <p>9.99€</p>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="imagenes/chocolate_blanco.jpg" alt="Bombones de chocolate blanco">
+            </a>
+            <h3>Bombones Chocolate Blanco</h3>
+            <p>Deliciosos bombones de chocolate blanco con relleno de frambuesa. Suaves y cremosos.</p>
+            <p>6.49€</p>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="imagenes/cesta_dulces.jpg" alt="Cesta de dulces y bombones">
+            </a>
+            <h3>Cesta de Dulces</h3>
+            <p>Cesta personalizada con una selección de bombones, chocolatinas y caramelos artesanales. El regalo más completo.</p>
+            <p>19.99€</p>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>Tienda de regalos, tu tienda de confianza.</p>
+        <p>©2025 Avenida de Fondo Derecha 2025</p>
+        <a href="silo.html">Conoce tu regalo</a>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('header nav');
+            nav.classList.toggle('abierto');
         }
-        header {
-    background-color: #ff0800;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-header .logo img {
-    width: 50px;
-}
+    </script>
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-nav ul li a:hover {
-    text-decoration: underline;
-}
-.producto {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 20px;
-    display: inline-block;
-    width: 250px;
-    background-color: #fff;
-}
-.producto img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-    </style>
 </body>
 </html>
