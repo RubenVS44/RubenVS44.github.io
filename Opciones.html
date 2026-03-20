@@ -34,19 +34,37 @@
             text-align: left;
             padding: 0 20px;
         }
-        main a.boton {
+
+        /* Anular el grid de main para esta página */
+        main {
+            display: block;
+            max-width: 860px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        div.botones {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+            margin: 10px auto 40px;
+        }
+
+        a.boton {
             display: inline-block;
-            margin: 10px 8px 40px;
             background-color: #ff0800;
             color: white;
             font-weight: bold;
             text-decoration: none;
-            padding: 10px 24px;
+            padding: 10px 20px;
             border-radius: 22px;
             transition: background-color 0.2s ease;
+            white-space: nowrap;
         }
-        main a.boton:hover {
+        a.boton:hover {
             background-color: #cc0600;
+            color: white;
         }
     </style>
 </head>
@@ -89,12 +107,14 @@
             peluches achuchables, tenemos algo para cada persona y cada momento.
         </p>
 
-        <a href="bombones.html" class="boton">🍫 Bombones</a>
-        <a href="flores.html" class="boton">🌸 Flores</a>
-        <a href="collarespulseras.html" class="boton">💎 Joyas</a>
-        <a href="peluches.html" class="boton">🧸 Peluches</a>
-        <a href="tarjetas.html" class="boton">💌 Tarjetas</a>
-        <a href="llaveros.html" class="boton">🔑 Llaveros</a>
+        <div class="botones">
+            <a href="bombones.html" class="boton">🍫 Bombones</a>
+            <a href="flores.html" class="boton">🌸 Flores</a>
+            <a href="collarespulseras.html" class="boton">💎 Joyas</a>
+            <a href="peluches.html" class="boton">🧸 Peluches</a>
+            <a href="tarjetas.html" class="boton">💌 Tarjetas</a>
+            <a href="llaveros.html" class="boton">🔑 Llaveros</a>
+        </div>
 
     </main>
 
@@ -125,4 +145,4 @@
     </script>
 
 </body>
-</html> 
+</html>

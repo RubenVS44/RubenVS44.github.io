@@ -29,6 +29,7 @@
             margin: 0 6px;
             color: #aaa;
         }
+
         main p {
             font-size: 17px;
             line-height: 1.9;
@@ -38,16 +39,30 @@
             text-align: left;
             padding: 0 20px;
         }
-        main nav {
+
+        /* Anular el grid de main para esta página */
+        main {
+            display: block;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Contenedor de tarjetas */
+        nav.categorias {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             justify-content: center;
             padding: 20px;
-            max-width: 800px;
+            max-width: 860px;
             margin: 0 auto 40px;
+            background: none;
+            border-radius: 0;
         }
-        main nav a {
+
+        /* Cada tarjeta */
+        nav.categorias a {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -56,27 +71,35 @@
             background-color: #fff;
             border: 2px solid #ffccc9;
             border-radius: 14px;
-            padding: 24px 30px;
+            padding: 24px 20px;
             text-decoration: none;
             color: #cc0600;
             font-weight: bold;
-            font-size: 16px;
-            width: 160px;
+            font-size: 15px;
+            width: 130px;
+            min-height: 110px;
+            box-sizing: border-box;
             transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
         }
-        main nav a span.icono {
-            font-size: 36px;
+
+        nav.categorias a span {
+            font-size: 34px;
+            line-height: 1;
         }
-        main nav a:hover {
+
+        nav.categorias a:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 16px rgba(255, 8, 0, 0.15);
             border-color: #ff0800;
+            background-color: #fff;
+            color: #cc0600;
         }
 
         @media (max-width: 480px) {
-            main nav a {
-                width: 130px;
-                padding: 18px 16px;
+            nav.categorias a {
+                width: 110px;
+                padding: 18px 12px;
+                min-height: 95px;
             }
         }
     </style>
@@ -96,6 +119,7 @@
         </nav>
     </header>
 
+    <!-- Migas de pan -->
     <nav class="migas" aria-label="Ruta de navegación">
         <a href="index.html">Inicio</a>
         <span>›</span>
@@ -122,30 +146,30 @@
             una historia diferente. ¿Quieres saber más sobre alguna en concreto?
         </p>
 
-  
-        <nav aria-label="Categorías de regalos">
+        <!-- Tarjetas de navegación a subcategorías -->
+        <nav class="categorias" aria-label="Categorías de regalos">
             <a href="BomboneSilo.html">
-                <span class="icono">🍫</span>
+                <span>🍫</span>
                 Bombones
             </a>
             <a href="flores.html">
-                <span class="icono">🌸</span>
+                <span>🌸</span>
                 Flores
             </a>
             <a href="collarespulseras.html">
-                <span class="icono">💎</span>
+                <span>💎</span>
                 Joyas
             </a>
             <a href="peluches.html">
-                <span class="icono">🧸</span>
+                <span>🧸</span>
                 Peluches
             </a>
             <a href="tarjetas.html">
-                <span class="icono">💌</span>
+                <span>💌</span>
                 Tarjetas
             </a>
             <a href="llaveros.html">
-                <span class="icono">🔑</span>
+                <span>🔑</span>
                 Llaveros
             </a>
         </nav>

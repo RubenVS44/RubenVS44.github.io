@@ -34,9 +34,25 @@
             text-align: left;
             padding: 0 20px;
         }
-        main a.boton {
+
+        /* Anular el grid de main para esta página */
+        main {
+            display: block;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        div.botones {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+            margin: 20px auto 40px;
+        }
+
+        a.boton {
             display: inline-block;
-            margin: 10px auto 40px;
             background-color: #ff0800;
             color: white;
             font-weight: bold;
@@ -45,15 +61,16 @@
             border-radius: 22px;
             transition: background-color 0.2s ease;
         }
-        main a.boton:hover {
+        a.boton:hover {
             background-color: #cc0600;
+            color: white;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="imagenes/logo.png" alt="Tienda de regalos" >
+        <img src="imagenes/logo.png" alt="Tienda de regalos">
         <button onclick="toggleMenu()" aria-label="Abrir menú">☰</button>
         <nav>
             <ul>
@@ -65,7 +82,7 @@
         </nav>
     </header>
 
-  
+    <!-- Migas de pan -->
     <nav class="migas" aria-label="Ruta de navegación">
         <a href="index.html">Inicio</a>
         <span>›</span>
@@ -94,9 +111,10 @@
             igualmente especiales.
         </p>
 
-        <a href="bombones.html" class="boton">Ver catálogo de bombones</a>
-        
-        <a href="Opciones.html" class="boton">Más opciones de regalo</a>
+        <div class="botones">
+            <a href="bombones.html" class="boton">Ver catálogo de bombones</a>
+            <a href="Opciones.html" class="boton">Más opciones de regalo</a>
+        </div>
 
     </main>
 
